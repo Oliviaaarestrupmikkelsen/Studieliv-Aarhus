@@ -1,11 +1,4 @@
-*   {
-    margin: 0;
-    padding: 0;}
 
-body {
-    font-family: poppins;
-    background-color: #FFF8F1;
-}
 .header {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
@@ -31,7 +24,7 @@ body {
     font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 .header li a:hover {
     text-decoration: underline;
@@ -47,18 +40,28 @@ body {
 }
 .hero img {
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;
 }
-.hero-content {
+
+#studieliv {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
     text-align: center;
     max-width: 600px;
+    top: 20%;
+    left: 35%;
+    transform: translate(-20%, -35%);
 }
+
+#aarhus {
+    position: absolute;
+    text-align: center;
+    max-width: 600px;
+    top: 40%;
+    left: 60%;
+    transform: translate(-40%, -60%);
+}
+
 .hero h1 {
     font-size: 72px;
     margin-bottom: 20px;
@@ -74,9 +77,13 @@ h2 {
 .content {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     color: #EF5B2A;
     text-align: center;
+}
+
+.content p {
+    margin: 20px 0;
 }
 
 .column {
@@ -88,6 +95,33 @@ h2 {
     display: block;
 }
 
+.image-container {
+    position: relative;
+    width: 100%;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image-button {
+    position: absolute;
+    bottom: 400px; /* Adjust this value to position the button */
+    left: 25%;
+    transform: translateX(-50%);
+    background-color: #F5A04F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px; 
+    width: 100px;
+    text-align: left;
+}
+.image-button:hover {
+    text-decoration: underline;
+}
 
 
 .footer {
@@ -96,8 +130,8 @@ h2 {
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: 1;
     width: 100%;
     font-size: small;
 }
@@ -105,6 +139,8 @@ h2 {
 .footer-column {
     flex: 1;
     padding: 0 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .footer-column h3 {
     border-bottom: 1px solid #F4DDBC;
@@ -115,7 +151,7 @@ h2 {
     padding: 0;
 }
 .footer-column li {
-    margin: 10px 0;
+    margin: 10px 0;    
 }
 .footer-column li a {
     color: #F5A04F;
@@ -126,6 +162,10 @@ h2 {
 {
     color: white;
     text-decoration: none;
+}
+
+#tilmeld:hover {
+    text-decoration: underline;
 }
 
 .footer-column li a:hover {
@@ -144,6 +184,6 @@ h3 {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
