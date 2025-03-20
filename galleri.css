@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre lige store kolonner */
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.gallery-item .overlay {
+    text-align: center;
+    color:#EF5B2A
+}
+
+.gallery-item .overlay:last-child {
+    color: #F5A04F; 
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.gallery-item .overlay a {
+    color: orange; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To lige store kolonner */
+    gap: 30px;
+    column-gap: 0px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 80px;
+}
+
+.gallery1 .gallery-item img {
+    width: 70%; 
+    margin: 0 auto; /* Centrerer billederne horisontalt */
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    color: #EF5B2A;
+}
+
+h4 {
+    color: black;
+    text-align: center;
+    font-weight: lighter;
+    margin: 40px 320px 80px 320px;
+    line-height: 2.5;
+}
+
+p {
+    line-height: 2.5;
+    text-align: left; 
+}
+
+.overlay a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 100px;
+    left: 95px;
+    font-size: 14px;
+    color: #333;
+}
+
+.breadcrumb a {
+    color: #F5A04F;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #333;
+}
+
+.breadcrumb a::after {
+    content: " > ";
+    color: #333;
+}
+
+.breadcrumb a:last-child::after {
+    content: "";
+}

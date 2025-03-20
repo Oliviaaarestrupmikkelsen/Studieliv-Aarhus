@@ -1,0 +1,52 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 100px; 
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 20px;
+}
+
+.text-and-image {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.text {
+    flex: 1;
+    margin-right: 200px; 
+    margin-left: 100px;
+}
+
+.right-image {
+    max-width: 400px; 
+    height: auto;
+    margin-right: 100px;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: #EF5B2A;
+}
+
+h4 {
+    text-align: left;
+    font-weight: lighter;
+    line-height: 2.5;
+}
+
+.email-link {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+

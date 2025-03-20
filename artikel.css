@@ -1,0 +1,95 @@
+h2 {
+    color: #EF5B2A; 
+    text-align: center;
+    margin: 100px 50px 30px 0px; /* Top 100px, højre 50px, bund 30px, venstre 0px */
+}
+
+h4 {
+    text-align: center; 
+    font-weight: lighter;
+    margin: 40px 320px 20px 320px; /* Top 40px, højre 320px, bund 20px, venstre 320px */
+    line-height: 2.5; 
+}
+
+.lille-overskrift {
+    font-size: 20px; 
+    font-weight: bold; 
+    margin: 40px 0px 20px 320px; /* Top 40px, højre 0px, bund 20px, venstre 320px */
+}
+
+.undertekst {
+    margin: 20px 320px 80px 320px; /* Top 20px, højre 320px, bund 80px, venstre 320px */
+    line-height: 2.5; 
+}
+
+.undertekst-punkter {
+    margin: 20px 320px 80px 340px; /* Top 20px, højre 320px, bund 80px, venstre 340px */
+    line-height: 2.5; 
+}
+
+img {
+    display: block;    
+    border-radius: 20px;
+    max-width: 1000px;
+    max-height: 400px;
+    margin-left: 320px;
+}
+
+
+a {
+    color: #F5A04F; 
+}
+
+.første-ord {
+    font-weight: bold;
+}
+
+.breadcrumb {
+    position: absolute; /* Positionerer elementet absolut i forhold til det nærmeste positionerede forældre-element */
+    top: 100px; 
+    left: 95px; 
+    font-size: 14px; 
+    color: #333; 
+}
+
+.breadcrumb a {
+    color: #F5A04F; 
+    text-decoration: none; 
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #333; 
+}
+
+/* Tilføjer en separator efter hvert a element inden for elementer med klassen 'breadcrumb' */
+.breadcrumb a::after {
+    content: " > "; /* Tilføjer en '>' separator */
+    color: #333; /* Sætter separatorens farve til en mørk grå nuance */
+}
+
+/* Fjerner separatoren efter det sidste a element inden for elementer med klassen 'breadcrumb' */
+.breadcrumb a:last-child::after {
+    content: ""; /* Fjerner indholdet */
+}
+
+.heart-checkbox {
+    display: none; /* Skjul checkboxen */
+}
+
+.heart-icon::before {
+    content: "\2661"; /* Tomt hjerte */
+    font-size: 1.5em;
+    color: #F5A04F;
+    cursor: pointer;
+    margin-left: 1200px;
+}
+
+.heart-checkbox:checked + .heart-icon::before {
+    content: "\2665"; /* Fyldt hjerte */
+    color: #F5A04F; /* Ændrer farven på hjerteikonet, når checkboxen er markeret */
+}
+

@@ -1,4 +1,3 @@
-
 .header {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
@@ -7,6 +6,7 @@
     padding: 10px 0;
     z-index: 1000;
 }
+
 .header ul {
     list-style-type: none;
     margin: 0;
@@ -14,9 +14,11 @@
     overflow: hidden;
     background-color: #F4DDBC;
 }
+
 .header li {
     float: left;
 }
+
 .header li a {
     display: block;
     color: #F5A04F;
@@ -26,114 +28,18 @@
     text-decoration: none;
     margin-left: 80px;
 }
+
 .header li a:hover {
     text-decoration: underline;
 }
 
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    padding-bottom: 20px;
-}
-.hero img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-#studieliv {
-    position: absolute;
-    text-align: center;
-    max-width: 600px;
-    top: 20%;
-    left: 35%;
-    transform: translate(-20%, -35%);
-}
-
-#aarhus {
-    position: absolute;
-    text-align: center;
-    max-width: 600px;
-    top: 40%;
-    left: 60%;
-    transform: translate(-40%, -60%);
-}
-
-.hero h1 {
-    font-size: 72px;
-    margin-bottom: 20px;
-    color: #EF5B2A;
-}
-
-h2 {
-    color: #EF5B2A;
-    text-align: center;
-    margin: 50px 0;
-}
-
-.content {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 100px;
-    color: #EF5B2A;
-    text-align: center;
-}
-
-.content p {
-    margin: 20px 0;
-}
-
-.column {
-    flex: 1;
-}
-.column img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.image-container {
-    position: relative;
-    width: 100%;
-}
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.image-button {
-    position: absolute;
-    bottom: 400px; /* Adjust this value to position the button */
-    left: 25%;
-    transform: translateX(-50%);
-    background-color: #F5A04F;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px; 
-    width: 100px;
-    text-align: left;
-}
-.image-button:hover {
-    text-decoration: underline;
-}
-
-
 .footer {
     background-color: #F4DDBC;
-    color: white;
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
     position: absolute;
-    bottom: 1;
     width: 100%;
-    font-size: small;
 }
 
 .footer-column {
@@ -142,26 +48,33 @@ h2 {
     margin-left: 50px;
     margin-right: 50px;
 }
+
 .footer-column h3 {
     border-bottom: 1px solid #F4DDBC;
     padding-bottom: 10px;
+    color: #EF5B2A;
 }
+
 .footer-column ul {
     list-style-type: none;
     padding: 0;
 }
+
 .footer-column li {
     margin: 10px 0;    
+    font-size: small;
 }
+
 .footer-column li a {
     color: #F5A04F;
     font-weight: bold;
     text-decoration: none;
 }
-#tilmeld
-{
+
+#tilmeld {
     color: white;
     text-decoration: none;
+    font-size: small;
 }
 
 #tilmeld:hover {
@@ -172,18 +85,46 @@ h2 {
     text-decoration: underline;
 }
 
-h3 {
-    color: #EF5B2A;
+.footer-tekst   {
+    color: white;
+    font-size: small;
+    line-height: 2.5;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 10px 50px;
     background-color: #F5A04F;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.newsletter input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.newsletter button {
+    display: block;
+    margin-left: 0px;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #F5A04F;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newsletter button:hover {
+    text-decoration: underline;
 }
 

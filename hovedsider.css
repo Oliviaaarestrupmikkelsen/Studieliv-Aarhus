@@ -1,0 +1,98 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#studieliv {
+    position: absolute;
+    text-align: center;
+    max-width: 600px;
+    top: 20%;
+    left: 35%;
+    transform: translate(-20%, -35%);
+}
+
+#aarhus {
+    position: absolute;
+    text-align: center;
+    max-width: 600px;
+    top: 40%;
+    left: 60%;
+    transform: translate(-40%, -60%);
+}
+
+.hero h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    color: #EF5B2A;
+}
+
+h2 {
+    color: #EF5B2A;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    color: #EF5B2A;
+    text-align: center;
+}
+
+.content p {
+    margin: 20px 0;
+}
+
+.column {
+    flex: 1;
+    margin-top: 100px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.image-button {
+    position: absolute;
+    bottom: 300px; 
+    left: 10%;
+    transform: translateX(-10%);
+    background-color: #F5A04F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px; 
+    text-align: left;
+}
+
+.image-button:hover {
+    text-decoration: underline;
+}
